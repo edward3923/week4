@@ -1,3 +1,16 @@
+function printMovies(movies) {
+  for (let i=0; i < movies.length; i++) {
+    // Store each item in the Array in memory
+    let movie = movies[i]
+  
+    // Create a sentence to be written out to the JavaScript console
+    let sentence = `"${movie.quote}" is a quote from ${movie.title}.`
+  
+    // Write the sentence to the JavaScript console
+    console.log(sentence)
+  }
+}
+
 let modernMovies = [
   { title: `Star Wars`, quote: `May the Force be with you.` },
   { title: `Titanic`, quote: `I'm the king of the world!` },
@@ -10,20 +23,22 @@ let modernMovies = [
   { title: `Jerry McGuire`, quote: `You had me at 'hello'.` }
 ]
 
+printMovies(modernMovies)
+
 // Goal: Print a list of famous movies and quotes from those movies
 // Something like, "May the Force by with you" is a quote from Star Wars.
 
 // Loop through the modernMovies Array
-for (let i=0; i < modernMovies.length; i++) {
-  // Store each item in the Array in memory
-  let movie = modernMovies[i]
+// for (let i=0; i < modernMovies.length; i++) {
+//   // Store each item in the Array in memory
+//   let movie = modernMovies[i]
 
-  // Create a sentence to be written out to the JavaScript console
-  let sentence = `"${movie.quote}" is a quote from ${movie.title}.`
+//   // Create a sentence to be written out to the JavaScript console
+//   let sentence = `"${movie.quote}" is a quote from ${movie.title}.`
 
-  // Write the sentence to the JavaScript console
-  console.log(sentence)
-}
+//   // Write the sentence to the JavaScript console
+//   console.log(sentence)
+// }
 
 let classicMovies = [
   { title: `The Wizard of Oz`, quote: `There's no place like home.` },
@@ -34,3 +49,17 @@ let classicMovies = [
   { title: `The Maltese Falcon`, quote: `The stuff that dreams are made of.` },
   { title: `Cool Hand Luke`, quote: `What we've got here is failure to communicate.` },
 ]
+
+
+// for (let i=0; i < classicMovies.length; i++) {
+//   // Store each item in the Array in memory
+//   let movie = classicMovies[i]
+
+//   // Create a sentence to be written out to the JavaScript console
+//   let sentence = `"${movie.quote}" is a quote from ${movie.title}.`
+
+//   // Write the sentence to the JavaScript console
+//   console.log(sentence)
+// }
+
+printMovies(classicMovies)

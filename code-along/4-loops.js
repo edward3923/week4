@@ -11,5 +11,11 @@ console.log(ingredients[4])
 console.log(ingredients[5])
 console.log(ingredients[6])
 
+let index = 0
+
+for (index; index < ingredients.length; index++) {
+    console.log(`You are now ordering ${ingredients[index]}`)
+}
+
 // with a loop
 // for (declare a variable for counting ("counter variable"); determine the criteria for the number of times to loop; increment the counter)
